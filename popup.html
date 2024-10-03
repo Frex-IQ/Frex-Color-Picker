@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/4428/4428697.png" type="image/png">
+    <title>Frex Color Picker</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="color-picker-pro">
+        <div class="window-header">
+            <img src="https://cdn-icons-png.flaticon.com/128/4428/4428697.png" alt="App Icon" style="width: 24px; height: 24px; margin-right: -110px;"> <!-- Add this -->
+            <span>Frex Color Picker</span>
+            <span id="close-button" style="cursor: pointer;">×</span>
+        </div>
+        <div class="window-content">
+            <div class="tabs">
+                <div class="tab active" data-tab="picker">Picker</div>
+                <div class="tab" data-tab="palette">Palette</div>
+                <div class="tab" data-tab="gradient">Gradient</div>
+                <div class="tab" data-tab="adjust">Adjust</div>
+            </div>
+            <div id="picker-tab" class="tab-content active">
+                <div class="input-group">
+                    <label for="color-picker">Select Color:</label>
+                    <input type="color" id="color-picker">
+                </div>
+                <div id="color-display"></div>
+                <div id="color-values">
+                    <input type="text" id="hex-input" placeholder="Hex">
+                    <input type="text" id="rgb-input" placeholder="RGB">
+                    <input type="text" id="hsl-input" placeholder="HSL">
+                </div>
+                <div class="input-group">
+                    <button id="copy-color">Copy Color</button>
+                </div>
+                <div class="input-group">
+                    <button id="save-color">Save Color</button>
+                </div>
+            </div>
+            <div id="palette-tab" class="tab-content">
+                <div class="input-group">
+                    <label>Color Palette:</label>
+                    <div id="color-palette" class="color-swatches"></div>
+                </div>
+                <div class="input-group">
+                    <label>Saved Colors:</label>
+                    <div id="saved-colors" class="color-swatches"></div>
+                </div>
+            </div>
+            <div id="gradient-tab" class="tab-content">
+                <div class="input-group">
+                    <label>Gradient Preview:</label>
+                    <div id="gradient-preview"></div>
+                </div>
+                <div class="input-group">
+                    <label for="gradient-start">Start Color:</label>
+                    <input type="color" id="gradient-start">
+                </div>
+                <div class="input-group">
+                    <label for="gradient-end">End Color:</label>
+                    <input type="color" id="gradient-end">
+                </div>
+            </div>
+            <div id="adjust-tab" class="tab-content">
+                <div class="input-group">
+                    <label>Brightness:</label>
+                    <div class="slider-container">
+                        <input type="range" id="brightness-slider" class="slider" min="0" max="200" value="100">
+                        <span id="brightness-value" class="slider-value">100%</span>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label>Contrast:</label>
+                    <div class="slider-container">
+                        <input type="range" id="contrast-slider" class="slider" min="0" max="200" value="100">
+                        <span id="contrast-value" class="slider-value">100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+          <div id="footer">
+    <a href="https://frex-iq-owner.web.app/" target="_blank" style="text-align: center; display: block; margin-bottom:10px">
+        Powered by <strong>Frex IQ</strong>
+    </a>
+</div>
+    </div>
+ <script src="popup.js"></script>
+</body>
+</html>
