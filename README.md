@@ -56,7 +56,6 @@ This project is licensed under the MIT License - see the [LICENSE](License) file
 ## Acknowledgements
 
 - Developed by Frex IQ
-- Icon designed by [Gimhan Rashmitha]
 
 
 ![image](https://github.com/user-attachments/assets/cea7ce1d-8621-4cd0-b552-1c57ba29dbb2)
