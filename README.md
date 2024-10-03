@@ -1,3 +1,4 @@
+
 # Frex Color Picker
 
 Frex Color Picker is a powerful and user-friendly Chrome extension that provides advanced color selection and manipulation tools for designers and developers.
@@ -56,3 +57,6 @@ This project is licensed under the MIT License - see the [LICENSE](License) file
 
 - Developed by Frex IQ
 - Icon designed by [Gimhan Rashmitha]
+
+
+![image](https://github.com/user-attachments/assets/cea7ce1d-8621-4cd0-b552-1c57ba29dbb2)
